@@ -21,7 +21,7 @@ body {
 }
 
 .cabecalho-logo {
-    height: 72px;
+    height: 100px;
 }
 
 .cabecalho-menu {
@@ -121,13 +121,57 @@ body {
     width: 1000px;
 }
 
+.conteudo-terciario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-terciario-titulo {
+    border-top: 0.4px solid white;
+    padding-top: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.conteudo-terciario-paragrafo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    width: 1000px;
+}
+
+.conteudo-quarto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-quarto-titulo {
+    border-top: 0.4px solid white;
+    padding-top: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 16px;
+}
 .rodape {
     padding: 32px;
     border-top: 0.4px solid white;
 }
 
 .rodape-logo {
-    height: 48px;
+    height: 80px;
     display: block;
     margin: 0 auto;
 }
