@@ -93,12 +93,12 @@ input:valid ~ label {
 
 .forget label a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 500;
 }
 
 .forget label a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 button {
