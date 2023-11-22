@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>PIM - Página de Apresentação</title>
+    
+    <script src="menu.js" defer></script>
+
 </head>
+
 <body>
     <header class="cabecalho">
         <img class="cabecalho-logo" src="image-removebg-preview (2) 1lgo.png" alt="Logo">
@@ -17,6 +22,29 @@
             <a class="cabecalho-menu-item" href="">Contato</a>
             <a class="cabecalho-menu-login" href="login.html">Entrar</a>
         </nav>
+
+        <div class="btn-abrir-menu" id="btn-menu">
+            <ion-icon name="list-circle-outline"></ion-icon>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
+    
+            <nav>
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="overlay-menu" id="overlay-menu"></div>
+
     </header>
 
     <main class="conteudo">
@@ -31,17 +59,31 @@
 
         <section class="conteudo-secundario">
             <h3 class="conteudo-secundario-titulo">Sobre Nós</h3>
-            <p class="conteudo-secundario-paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus asperiores perferendis ducimus repellendus modi doloribus ad dolorum expedita vero at dolores voluptas eveniet quod, odit laudantium possimus repellat aperiam veniam?</p>
-            <p class="conteudo-secundario-paragrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur veritatis quidem harum rerum pariatur cum vero, necessitatibus sed minus magnam ducimus porro totam quae quasi labore hic possimus. In, accusantium.</p>
-            <p class="conteudo-secundario-paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, aliquid cumque exercitationem architecto cum eum aperiam dolor libero nisi expedita placeat suscipit molestias reiciendis vitae quasi dicta pariatur perspiciatis! Provident?</p>
+            <p class="conteudo-secundario-paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                asperiores perferendis ducimus repellendus modi doloribus ad dolorum expedita vero at dolores voluptas
+                eveniet quod, odit laudantium possimus repellat aperiam veniam?</p>
+            <p class="conteudo-secundario-paragrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequuntur veritatis quidem harum rerum pariatur cum vero, necessitatibus sed minus magnam ducimus
+                porro totam quae quasi labore hic possimus. In, accusantium.</p>
+            <p class="conteudo-secundario-paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A,
+                aliquid cumque exercitationem architecto cum eum aperiam dolor libero nisi expedita placeat suscipit
+                molestias reiciendis vitae quasi dicta pariatur perspiciatis! Provident?</p>
         </section>
 
         <section class="conteudo-terciario">
             <h3 class="conteudo-terciario-titulo">Serviços</h3>
-            <p class="conteudo-terciario-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore sint laborum, est iure officiis dicta voluptate quaerat. Quae, reprehenderit. Quod neque ipsum quam perferendis. Corporis possimus aliquid laudantium quasi.</p>
-            <p class="conteudo-terciario-paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quidem esse sapiente maiores iusto reiciendis voluptatibus velit non animi optio qui impedit tenetur iure architecto, doloribus saepe repudiandae, aperiam iste.</p>
-            <p class="conteudo-terciario-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium veritatis assumenda commodi sed ea tempora est animi incidunt maiores delectus quasi officia, aliquam, totam in natus sequi modi asperiores.</p>
-            <p class="conteudo-terciario-paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae sed et quaerat corporis distinctio accusamus est repudiandae, eligendi recusandae minus eaque asperiores quisquam, tempora voluptatibus, magnam officia! Facilis, porro minus!</p>
+            <p class="conteudo-terciario-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore
+                sint laborum, est iure officiis dicta voluptate quaerat. Quae, reprehenderit. Quod neque ipsum quam
+                perferendis. Corporis possimus aliquid laudantium quasi.</p>
+            <p class="conteudo-terciario-paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+                quidem esse sapiente maiores iusto reiciendis voluptatibus velit non animi optio qui impedit tenetur
+                iure architecto, doloribus saepe repudiandae, aperiam iste.</p>
+            <p class="conteudo-terciario-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                accusantium veritatis assumenda commodi sed ea tempora est animi incidunt maiores delectus quasi
+                officia, aliquam, totam in natus sequi modi asperiores.</p>
+            <p class="conteudo-terciario-paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae sed
+                et quaerat corporis distinctio accusamus est repudiandae, eligendi recusandae minus eaque asperiores
+                quisquam, tempora voluptatibus, magnam officia! Facilis, porro minus!</p>
         </section>
 
         <!--<section class="conteudo-quarto">
@@ -60,11 +102,16 @@
             </div>
         </section>
 
-        <p class="botaozap"><a href='https://api.whatsapp.com/send?phone=55999999999&'class="icon" target='_blank'><i class="fab fa-whatsapp"></i></a></p>
+        <p class="botaozap"><a href='https://api.whatsapp.com/send?phone=55999999999&' class="icon" target='_blank'><i
+                    class="fab fa-whatsapp"></i></a></p>
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <footer class="rodape">
         <img class="rodape-logo" src="image-removebg-preview (2) 1lgo.png" alt="Logo">
     </footer>
 </body>
+
 </html>
