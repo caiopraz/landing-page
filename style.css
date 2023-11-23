@@ -80,7 +80,7 @@ ul {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu {
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
@@ -173,7 +173,7 @@ ul {
 .conteudo-principal-escrito-botao:hover {
     box-shadow: 0px 0px 8px orange;
     transform: scale(1.05);
-    
+
 }
 
 .conteudo-principal-imagem {
@@ -381,6 +381,7 @@ form textarea {
 }*/
 
 @media screen and (max-width: 1020px) {
+
     /* CABEÇALHO */
     .cabecalho {
         display: flex;
